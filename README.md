@@ -6,29 +6,21 @@ Welcome to the OS Process Management Project! This comprehensive project aims to
 
 ## 🔄 Implemented Algorithms
 
-### 1. First-Come, First-Served (FCFS)
+### 1. Round Robin (RR)
 
-This scheduling algorithm operates on a first-come, first-served basis. Processes are executed in the order they arrive.
+The Round Robin scheduling algorithm assigns each process a fixed time slice, often referred to as the time quantum. Processes are executed in a circular manner, with each process getting a turn to run for its allocated time slice. If a process does not complete within its time quantum, it is moved to the end of the queue to await its next turn.
 
 ### 2. Shortest Job Next (SJN)
 
 SJN, also known as Shortest Job First (SJF), schedules processes based on their burst time. The process with the shortest burst time is selected next.
 
-### 3. Round Robin (RR)
+### 3. Shortest Remaining Time Next (SRTN)
 
-RR is a time-sliced scheduling algorithm, ensuring fair execution by allowing each process to run for a fixed time quantum.
+SRTN is a preemptive scheduling algorithm that selects the process with the smallest remaining execution time for the next execution. The scheduler may interrupt the current process if a new one with a shorter remaining time arrives. SRTN minimizes waiting times and enhances system efficiency by prioritizing processes with the least remaining work.
 
-### 4. Priority Scheduling
 
-Processes are scheduled based on their priority. Higher priority processes are given preference.
 
-### 5. Deadlock Detection and Handling
 
-This feature includes the implementation of deadlock detection algorithms to identify and resolve deadlock situations.
-
-### 6. Resource Allocation Graph (RAG)
-
-Visualize and manage resource allocation through a graphical representation of processes and resources.
 
 ## 🚀 Getting Started
 
